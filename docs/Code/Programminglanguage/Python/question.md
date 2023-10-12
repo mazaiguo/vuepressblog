@@ -18,7 +18,7 @@ pyinstaller -F -w -i python.ico watermark.py
 * 1，打开资源管理器，进入%appdata%
 * 2，创建pip目录，并在目录中创建pip.ini文件
 * 3，将下列pip源配置输入pip.ini，并保存。
-``` c++
+``` bash
     [global]
     timeout = 6000
     index-url = https://pypi.tuna.tsinghua.edu.cn/simple

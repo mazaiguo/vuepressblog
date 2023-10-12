@@ -1,4 +1,5 @@
 module.exports = {
+  base:'/vuepressblog/',
   title: 'Hello VuePress',
   description: 'Just playing around',
   themeConfig: {
@@ -10,6 +11,9 @@ module.exports = {
   sidebar: 'auto', // 侧边栏配置
   markdown: {
     lineNumbers: true,
+    toc: { level: [1, 2, 3] },
+    anchor: { permalink: true, permalinkBefore: true, permalinkSymbol: '#' },
+    extractHeaders: [ 'h2', 'h3', 'h4' ],
   },
   search: true,
   searchMaxSuggestions: 10,

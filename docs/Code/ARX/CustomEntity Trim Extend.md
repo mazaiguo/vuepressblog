@@ -4,7 +4,7 @@
 
 ## Extend
 
-```c++
+```cpp
 	virtual Acad::ErrorStatus subGetStretchPoints(
 		AcGePoint3dArray& stretchPoints) const;
 	virtual Acad::ErrorStatus subMoveStretchPointsAt(
@@ -16,7 +16,7 @@
 
 ## Trim
 
-```c++
+```cpp
 virtual Acad::ErrorStatus subIntersectWith(const AcDbEntity * ent,
 		AcDb::Intersect intType,
 		AcGePoint3dArray & points,

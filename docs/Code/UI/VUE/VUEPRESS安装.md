@@ -185,3 +185,93 @@ module.exports = {
 代码增加拷贝设置
 ```bash
 yarn add vuepress-plugin-code-copy
+```
+
+## 编译
+
+```bash
+yarn docs:build
+```
+
+### 问题
+
+```
+运行vue项目提示Error: error:0308010C:digital envelope routines::unsupported
+```
+
+#### 解决方案
+
+`package.json`
+
+```
+"docs:build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs"
+```
+
+
+
+SET NODE_OPTIONS=--openssl-legacy-provider && 
+
+## 部署
+
+* 在 `docs/.vuepress/config.js` 中设置正确的 `base`。
+
+  如果你打算发布到 `https://<USERNAME>.github.io/`，则可以省略这一步，因为 `base` 默认即是 `"/"`。
+
+  如果你打算发布到 `https://<USERNAME>.github.io/<REPO>/`（也就是说你的仓库在 `https://github.com/<USERNAME>/<REPO>`），则将 `base` 设置为 `"/<REPO>/"`。
+
+* 新建`deploy.sh`
+
+```bash
+#!/usr/bin/env sh
+
+# 确保脚本抛出遇到的错误
+set -e
+
+# 生成静态文件
+npm run docs:build
+
+# 进入生成的文件夹
+cd docs/.vuepress/dist
+
+# 如果是发布到自定义域名
+# echo 'www.example.com' > CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果发布到 https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+
+# 如果发布到 https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:mazaiguo/vuepressblog.git master:gh-pages
+
+cd -
+```
+
+`docs\.vuepress\config.js`
+
+```javascript
+module.exports = {
+  base:'/vuepressblog/',
+  title: 'Hello VuePress',
+  description: 'Just playing around',
+  themeConfig: {
+    logo: '/assets/img/Italy.png',
+    nav: require('./nav/zh'),
+    sidebar: require('./sidebar/zh'),
+  },
+  displayAllHeaders: false, // 显示所有页面的标题链接
+  sidebar: 'auto', // 侧边栏配置
+  markdown: {
+    lineNumbers: true,
+  },
+  search: true,
+  searchMaxSuggestions: 10,
+  sidebarDepth: 2,
+  plugins: ['@vuepress/back-to-top', ['vuepress-plugin-code-copy', true]]
+}
+```
+
+
+

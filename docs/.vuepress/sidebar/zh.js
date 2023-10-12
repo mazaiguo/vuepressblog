@@ -14,7 +14,6 @@ module.exports = {
         'MFC使用cef', /* /bar/three.html */
         'mockjs',
         'Vue3-UI库学习',
-        'Vue3学习',
         'VUEPRESS安装',
         'VUE组件打包',
         'vue3-admin-guide-master/src/',

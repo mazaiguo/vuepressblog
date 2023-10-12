@@ -4,7 +4,7 @@ DBMOD，只读
 
 * //声明设置数据库模式的函数
 
-  ```c++
+  ```cpp
   extern long acdbSetDbmod(AcDbDatabase * pDb, long newVal); 
   ```
 

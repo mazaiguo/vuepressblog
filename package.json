@@ -9,7 +9,8 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "vuepress-plugin-code-copy": "^1.0.6"
