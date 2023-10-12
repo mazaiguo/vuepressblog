@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>token的理解 | Hello VuePress</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/vuepressblog/assets/css/0.styles.5d2f2d54.css" as="style"><link rel="preload" href="/vuepressblog/assets/js/app.77c22008.js" as="script"><link rel="preload" href="/vuepressblog/assets/js/2.f37d4b99.js" as="script"><link rel="preload" href="/vuepressblog/assets/js/1.c6605fe6.js" as="script"><link rel="preload" href="/vuepressblog/assets/js/33.25df1576.js" as="script"><link rel="prefetch" href="/vuepressblog/assets/js/10.3bc0500e.js"><link rel="prefetch" href="/vuepressblog/assets/js/11.c4a6e2fc.js"><link rel="prefetch" href="/vuepressblog/assets/js/12.5edd7dc0.js"><link rel="prefetch" href="/vuepressblog/assets/js/13.91c53865.js"><link rel="prefetch" href="/vuepressblog/assets/js/14.12c313e8.js"><link rel="prefetch" href="/vuepressblog/assets/js/15.d877ef1e.js"><link rel="prefetch" href="/vuepressblog/assets/js/16.d6460244.js"><link rel="prefetch" href="/vuepressblog/assets/js/17.64f401d0.js"><link rel="prefetch" href="/vuepressblog/assets/js/18.da5d49f9.js"><link rel="prefetch" href="/vuepressblog/assets/js/19.17b33852.js"><link rel="prefetch" href="/vuepressblog/assets/js/20.37e58421.js"><link rel="prefetch" href="/vuepressblog/assets/js/21.2bd1f7b2.js"><link rel="prefetch" href="/vuepressblog/assets/js/22.c3e3a28d.js"><link rel="prefetch" href="/vuepressblog/assets/js/23.43af55fd.js"><link rel="prefetch" href="/vuepressblog/assets/js/24.1a41cb6e.js"><link rel="prefetch" href="/vuepressblog/assets/js/25.a3448d26.js"><link rel="prefetch" href="/vuepressblog/assets/js/26.c88d355a.js"><link rel="prefetch" href="/vuepressblog/assets/js/27.23b577b9.js"><link rel="prefetch" href="/vuepressblog/assets/js/28.5265175a.js"><link rel="prefetch" href="/vuepressblog/assets/js/29.a5c60170.js"><link rel="prefetch" href="/vuepressblog/assets/js/3.caee289f.js"><link rel="prefetch" href="/vuepressblog/assets/js/30.3e5f9a66.js"><link rel="prefetch" href="/vuepressblog/assets/js/31.0a696204.js"><link rel="prefetch" href="/vuepressblog/assets/js/32.ff3063c3.js"><link rel="prefetch" href="/vuepressblog/assets/js/34.db214d84.js"><link rel="prefetch" href="/vuepressblog/assets/js/35.6223a748.js"><link rel="prefetch" href="/vuepressblog/assets/js/36.86bce77f.js"><link rel="prefetch" href="/vuepressblog/assets/js/37.277dbe3a.js"><link rel="prefetch" href="/vuepressblog/assets/js/38.8083092e.js"><link rel="prefetch" href="/vuepressblog/assets/js/39.858c2138.js"><link rel="prefetch" href="/vuepressblog/assets/js/4.bf1d751f.js"><link rel="prefetch" href="/vuepressblog/assets/js/40.7891e8d5.js"><link rel="prefetch" href="/vuepressblog/assets/js/41.fe522cc8.js"><link rel="prefetch" href="/vuepressblog/assets/js/42.4f847244.js"><link rel="prefetch" href="/vuepressblog/assets/js/43.50f305be.js"><link rel="prefetch" href="/vuepressblog/assets/js/44.e9fa3c6c.js"><link rel="prefetch" href="/vuepressblog/assets/js/45.c5e279d1.js"><link rel="prefetch" href="/vuepressblog/assets/js/46.b8bd90a7.js"><link rel="prefetch" href="/vuepressblog/assets/js/47.5682a637.js"><link rel="prefetch" href="/vuepressblog/assets/js/48.8cc1db97.js"><link rel="prefetch" href="/vuepressblog/assets/js/49.59b9a085.js"><link rel="prefetch" href="/vuepressblog/assets/js/5.eca1db11.js"><link rel="prefetch" href="/vuepressblog/assets/js/50.abaf981c.js"><link rel="prefetch" href="/vuepressblog/assets/js/51.2c9140cf.js"><link rel="prefetch" href="/vuepressblog/assets/js/52.1843e3f6.js"><link rel="prefetch" href="/vuepressblog/assets/js/53.3cbcb942.js"><link rel="prefetch" href="/vuepressblog/assets/js/54.de99f447.js"><link rel="prefetch" href="/vuepressblog/assets/js/55.06a40728.js"><link rel="prefetch" href="/vuepressblog/assets/js/56.f90b2773.js"><link rel="prefetch" href="/vuepressblog/assets/js/57.f3e906d2.js"><link rel="prefetch" href="/vuepressblog/assets/js/58.9b3f505a.js"><link rel="prefetch" href="/vuepressblog/assets/js/59.54b7064b.js"><link rel="prefetch" href="/vuepressblog/assets/js/6.23ad19d6.js"><link rel="prefetch" href="/vuepressblog/assets/js/60.e35f3fc1.js"><link rel="prefetch" href="/vuepressblog/assets/js/61.a21088fc.js"><link rel="prefetch" href="/vuepressblog/assets/js/62.69fe643e.js"><link rel="prefetch" href="/vuepressblog/assets/js/63.bf2f169b.js"><link rel="prefetch" href="/vuepressblog/assets/js/64.e93951e2.js"><link rel="prefetch" href="/vuepressblog/assets/js/7.43a98834.js"><link rel="prefetch" href="/vuepressblog/assets/js/vendors~docsearch.672a74c5.js">
+    <link rel="stylesheet" href="/vuepressblog/assets/css/0.styles.5d2f2d54.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepressblog/" class="home-link router-link-active"><img src="/vuepressblog/assets/img/Italy.png" alt="Hello VuePress" class="logo"> <span class="site-name can-hide">Hello VuePress</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepressblog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Code" class="dropdown-title"><span class="title">Code</span> <span class="arrow down"></span></button> <button type="button" aria-label="Code" class="mobile-dropdown-title"><span class="title">Code</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepressblog/Code/ARX/" class="nav-link">
+  ARX
+</a></li><li class="dropdown-item"><!----> <a href="/vuepressblog/Code/JAVA/" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><h4>
+          Programminglanguage
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepressblog/Code/Programminglanguage/Python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          UI
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepressblog/Code/UI/VUE/" class="nav-link router-link-active">
+  Vue3-UI库学习
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepressblog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Code" class="dropdown-title"><span class="title">Code</span> <span class="arrow down"></span></button> <button type="button" aria-label="Code" class="mobile-dropdown-title"><span class="title">Code</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepressblog/Code/ARX/" class="nav-link">
+  ARX
+</a></li><li class="dropdown-item"><!----> <a href="/vuepressblog/Code/JAVA/" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><h4>
+          Programminglanguage
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepressblog/Code/Programminglanguage/Python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          UI
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepressblog/Code/UI/VUE/" class="nav-link router-link-active">
+  Vue3-UI库学习
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vuepressblog/Code/UI/VUE/MFC使用cef.html" class="sidebar-link">编译CEF</a></li><li><a href="/vuepressblog/Code/UI/VUE/mockjs.html" class="sidebar-link">在线mock网站fastmock</a></li><li><a href="/vuepressblog/Code/UI/VUE/Vue3-UI库学习.html" class="sidebar-link">关于Vue3 UI库</a></li><li><a href="/vuepressblog/Code/UI/VUE/VUEPRESS安装.html" class="sidebar-link">安装Yarn</a></li><li><a href="/vuepressblog/Code/UI/VUE/VUE组件打包.html" class="sidebar-link">实现组件的全量打包</a></li><li><a href="/vuepressblog/Code/UI/VUE/vue3-admin-guide-master/src/" aria-current="page" class="sidebar-link">文件类目</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="token的理解"><a href="#token的理解" class="header-anchor">#</a> token的理解</h1> <h3 id="什么是token"><a href="#什么是token" class="header-anchor">#</a> 什么是token</h3> <p>token：每个用户的唯一标识。在有限的时间内，携带token向服务端接口发送请求。</p> <h3 id="流程"><a href="#流程" class="header-anchor">#</a> 流程</h3> <ol><li><p>首先在登录的时候输入账号和密码，调用接口和后台数据比对，
+如果比对成功，则把<code>token</code>,<code>用户名</code>,<code>头像</code>存入store小仓库里。</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token comment">//store </span>
+
+<span class="token comment">//创建用户小仓库</span>
+<span class="token keyword">let</span> useUserStore <span class="token operator">=</span> <span class="token function">defineStore</span><span class="token punctuation">(</span><span class="token string">'User'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token comment">//小仓库存储数据的地方</span>
+  state<span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> UserState <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      token<span class="token operator">:</span> <span class="token constant">GET_TOKEN</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      username<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+      avatar<span class="token operator">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    actions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token keyword">async</span> <span class="token function">userLogin</span><span class="token punctuation">(</span>data<span class="token operator">:</span> loginForm<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">//调用后台接口</span>
+      <span class="token keyword">let</span> result<span class="token operator">:</span> loginResponseData <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">reqLogin</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>result<span class="token punctuation">.</span>code <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//存储token</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>token <span class="token operator">=</span> result<span class="token punctuation">.</span>data<span class="token punctuation">.</span>token <span class="token keyword">as</span> <span class="token builtin">string</span>
+        <span class="token constant">SET_TOKEN</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>data<span class="token punctuation">.</span>token <span class="token keyword">as</span> <span class="token builtin">string</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token string">'ok'</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token builtin">Promise</span><span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>data<span class="token punctuation">.</span>message<span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   <span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div></li> <li><p>登录成功后，会跳转首页，首页展示数据必须要请求接口才能拿到数据，所以在请求接口的时候，需要在请求头中携带<code>token</code>.</p></li> <li><p>所以需要在请求拦截器中，把仓库中的token值添加到请求头中。</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token comment">//request.ts</span>
+
+<span class="token keyword">import</span> useUserStore <span class="token keyword">from</span> <span class="token string">'@/store/modules/user'</span>
+
+request<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">//获取仓库内部的token，登录成功在携带给服务器</span>
+  <span class="token keyword">const</span> userStore <span class="token operator">=</span> <span class="token function">useUserStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>userStore<span class="token punctuation">.</span>token<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    config<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>token <span class="token operator">=</span> userStore<span class="token punctuation">.</span>token
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> config
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div></li></ol> <h3 id="手把手画图"><a href="#手把手画图" class="header-anchor">#</a> 手把手画图</h3> <p><img src="/vuepressblog/assets/img/P48_1.a872b76c.png" alt="P48"></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/vuepressblog/assets/js/app.77c22008.js" defer></script><script src="/vuepressblog/assets/js/2.f37d4b99.js" defer></script><script src="/vuepressblog/assets/js/1.c6605fe6.js" defer></script><script src="/vuepressblog/assets/js/33.25df1576.js" defer></script>
+  </body>
+</html>
